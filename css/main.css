@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes karim {
+  0% {
+    background-color: lightpink;
+    width: 50px;
+    left: -300%;
+    top: -250%;
+    border-radius: 10px;
+  }
+  25% {
+    background-color: pink;
+    width: 90px;
+
+    left: 10%;
+    top: 10%;
+    border-radius: 10px;
+  }
+  50% {
+    background-color: palevioletred;
+    width: 150px;
+
+    left: 20%;
+    top: 20%;
+    border-radius: 20px;
+  }
+  75% {
+    background-color: hotpink;
+    width: 200px;
+
+    left: 40%;
+    top: 40%;
+    border-radius: 30px;
+  }
+  100% {
+    background-color: deeppink;
+    width: 250px;
+
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+div.box {
+  width: 250px;
+  height: 250px;
+  background-color: deeppink;
+  animation: karim 5s linear infinite;
+  animation-delay: 500ms;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
